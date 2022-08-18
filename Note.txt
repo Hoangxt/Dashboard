@@ -1,0 +1,5 @@
+npx
+
+setup project
+npm install  --legacy-peer-deps
+i tailwind
