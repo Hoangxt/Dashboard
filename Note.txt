@@ -8,3 +8,6 @@ i tailwind
 
 Navbar
 - screen logic
+
+Data table
+- padding, sorting,search...
