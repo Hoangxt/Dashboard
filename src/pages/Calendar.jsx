@@ -17,7 +17,7 @@ import { Header } from "../compontents";
 const Calendar = () => {
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded=2xl">
-      <Header category="Page" title="Calendar" />
+      <Header category="App" title="Calendar" />
       <ScheduleComponent
         height="650px"
         eventSettings={{ dataSource: scheduleData }}
