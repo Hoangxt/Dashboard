@@ -25,12 +25,12 @@ export const ContextProvider = ({ children }) => {
   const setColor = (color) => {
     setCurrentColor(color);
     localStorage.setItem("colorMode", color);
-    setThemeSettings(false);
+    // setThemeSettings(false);
   };
 
   const handleClick = (clicked) => {
     setIsClicked({ ...initialState, [clicked]: true });
-    setThemeSettings(false);
+    // setThemeSettings(false);
   };
 
   return (

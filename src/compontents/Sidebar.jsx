@@ -33,7 +33,7 @@ const Sidebar = () => {
               className="items-center gap-3 mt-4 flex text-xl
             font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiShopware className="w-8 h-8 mr-2" /> <span>Shoppy</span>
+              <SiShopware className="w-8 h-8 mr-2" /> <span>Another App</span>
             </Link>
             <TooltipComponent content="menu" position="BottomCenter">
               <button

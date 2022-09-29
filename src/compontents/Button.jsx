@@ -1,12 +1,27 @@
 import React from "react";
 
-const Button = ({ bgColor, color, size, text, borderRadius }) => {
+import { useStateContext } from "../contexts/ContextProvider";
+
+const Button = ({
+  bgColor,
+  color,
+  size,
+  text,
+  borderRadius,
+  icon,
+  bgHoverColor,
+  width,
+}) => {
+  const { setIsClicked, initialState } = useStateContext();
+
   return (
     <button
       type="button"
+      onClick={() => setIsClicked(initialState)}
       style={{ backgroundColor: bgColor, color, borderRadius }}
-      className={`${size} p-3 hover:drop-shadow-xl`}
+      className={`text-${size} p-3 w-${width} hover:drop-shadow-xl hover:bg-${bgHoverColor}`}
     >
+      {icon}
       {text}
     </button>
   );
